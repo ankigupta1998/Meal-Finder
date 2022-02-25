@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meal Finder</h1>
+      <div class="flex">
+        <form class="flex" id="submit">
+          <input type="text" id="search" placeholder="Search for meals" />
+          <button class="search-btn" type="submit">
+            <span class="material-icons-outlined"> search </span>
+          </button>
+        </form>
+        <button class="random-btn" id="random">
+          <span class="material-icons-outlined"> shuffle </span>   
+        </button>
+      </div>
+      <div id="result-heading"></div>
+      <div class="meals" id="meals"></div>
+      <div id="single-meal"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
